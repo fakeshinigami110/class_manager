@@ -6,10 +6,8 @@ namespace class_mangemt
 {
     public partial class TeacherLoginForm : Form
     {
-        private const string HardcodedTeacherCode = "40221973144";
-        private const string HardcodedPassword = "1452002665";
-        private const string user = "40221973125";
-        private const string pass = "69";
+        private const string HardcodedTeacherCode = "12345678";
+        private const string HardcodedPassword = "12345678";
         public TeacherLoginForm()
         {
             InitializeComponent();
@@ -25,7 +23,7 @@ namespace class_mangemt
             string teacherCode = txtTeacherCode.Text;
             string password = txtPassword.Text;
 
-            if ((teacherCode == HardcodedTeacherCode && password == HardcodedPassword)||(teacherCode== user && password == pass))
+            if ((teacherCode == HardcodedTeacherCode && password == HardcodedPassword))
             {
                 ReviewStudentsForm studentsForm = new ReviewStudentsForm();
                
